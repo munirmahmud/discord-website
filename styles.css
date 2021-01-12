@@ -173,3 +173,23 @@ img {
 .btn-dark:hover {
   background-color: #36393f;
 }
+
+/* COLLABORATION */
+.grid-image,
+.text-group {
+  grid-column: span 4;
+}
+.grid-image {
+  margin-top: 2.4rem;
+}
+.text-group {
+  margin-top: 2rem;
+}
+
+.secondary-title {
+  font-size: var(--secondary-title-font-size);
+}
+.text-group p {
+  margin-top: 2rem;
+  line-height: 3.2rem;
+}
