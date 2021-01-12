@@ -195,7 +195,8 @@ img {
 }
 
 /* Voice Channel */
-.voice-channel {
+.voice-channel,
+.video-call {
   background-color: var(--off-white-clr);
 }
 .wave {
@@ -227,4 +228,49 @@ img {
 
 .wave-inverted {
   transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.video-call .row {
+  padding-bottom: 8rem;
+}
+.video-call .text-group {
+  grid-column: span var(--grid-column-four);
+}
+.video-call .text-group p {
+  margin-top: 2.4rem;
+}
+.video-call .grid-image {
+  width: 100%;
+  grid-column: span var(--grid-column-four);
+  margin-top: 2.4rem;
+}
+
+/* DOWNLOAD */
+.download {
+  background-color: var(--off-white-clr);
+}
+.download .remove-grid {
+  display: block;
+  padding-top: 0;
+  text-align: center;
+}
+.sparky-bg {
+  display: inline-block;
+}
+
+.download h2 {
+  font-size: 3.2rem;
+  font-family: var(--main-font-family-medium);
+}
+.btn-brand {
+  background-color: var(--brand-clr);
+  color: var(--light-clr);
+  margin-top: 4rem;
+  transition: all 0.3s;
+}
+.download .btn-brand {
+  margin-top: 4rem;
+}
+.btn-brand:hover {
+  background-color: #8ea1e1;
 }
