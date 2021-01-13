@@ -115,6 +115,8 @@ img {
 .btn-login {
   margin-right: 1.6rem;
   line-height: 1.8;
+  border-radius: 5rem;
+  padding: 0.2rem 1.5rem;
 }
 
 .mobile-toggle {
@@ -133,6 +135,7 @@ img {
   grid-template-columns: repeat(var(--grid-column-four), 1fr);
   gap: 0 2rem;
   padding: var(--section-spacing);
+  align-items: center;
 }
 
 .hero-content-wrapper {
@@ -345,4 +348,115 @@ img {
 }
 .footer .btn-brand {
   margin-top: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  :root {
+    --primary-title-font-size: 5.6rem;
+    --secondary-title-font-size: 4.8rem;
+    --grid-column-four: 8;
+    --section-spacing: 8rem 4rem;
+  }
+
+  .hero {
+    min-height: 62.6rem;
+  }
+
+  .hero-content-wrapper {
+    grid-column: span 5;
+  }
+
+  .hero-description {
+    margin: 4rem 0 1rem;
+  }
+
+  .grid-image {
+    margin: auto 0;
+  }
+
+  .text-group {
+    margin-top: 0;
+  }
+
+  .reverse {
+    order: 1;
+  }
+
+  .video-call {
+    text-align: center;
+  }
+
+  .info-box {
+    grid-column: span 3;
+    grid-row: span 2;
+    align-self: baseline;
+  }
+
+  .spacer {
+    display: block;
+    grid-row: span 2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --grid-column-four: 12;
+    --section-spacing: 12rem 4rem;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-link {
+    font-size: 1.6rem;
+    color: var(--light-clr);
+    margin: 0 1rem;
+    padding: 1rem;
+    font-weight: 700;
+  }
+
+  .hero-content-wrapper {
+    grid-column: 3 / span 8;
+    text-align: center;
+  }
+
+  .mobile-toggle {
+    display: none;
+  }
+
+  .grid-image {
+    grid-column: span 7;
+  }
+
+  .text-group {
+    grid-column: 9/-1;
+  }
+
+  .voice-channel .row {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+  .voice-channel .reverse {
+    order: 0;
+  }
+
+  .video-call .text-group {
+    grid-column: 2 / span 10;
+  }
+
+  .footer-links-group {
+    align-self: baseline;
+  }
+  .footer-links-group .footer-title {
+    padding-top: 0;
+  }
+  .footer-link {
+    line-height: 24px;
+  }
+  .footer-link:hover {
+    text-decoration: underline;
+  }
 }
